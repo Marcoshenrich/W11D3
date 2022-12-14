@@ -10,9 +10,6 @@ function Greenhouse() {
 
   const { themeName, setThemeName } = useTheme()
 
-
-
-
   return (
     <section>
 
