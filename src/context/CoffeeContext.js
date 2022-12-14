@@ -12,17 +12,17 @@ export default function CoffeeProvider(props) {
     });
     setCoffeeBean(bean);
   };
-
   return (
     <CoffeeContext.Provider
-      value={{
-        coffeeBean,
-        setCoffeeBeanId
-      }}
+    value={{
+      coffeeBean,
+      setCoffeeBeanId
+    }}
     >
       {props.children}
     </CoffeeContext.Provider>
   );
+  console.log("hello")
 }
 
 export const useCoffeeContext = () => {

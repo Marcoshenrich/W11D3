@@ -7,7 +7,7 @@ import CoffeeProvider from './context/CoffeeContext';
 
 const Root = () => {
   return (
-    <CoffeeProvider>
+    <CoffeeProvider >
       <BrowserRouter>
         <App />
       </BrowserRouter>
