@@ -5,15 +5,13 @@ import ClimateProvider, { useClimate } from '../../context/ClimateContext.js'
 
 function Thermometer() {
   const {temperature, setTemperature} = useClimate()
-  console.log(temperature);
   const slideHandler =(e) =>{
-    // e.preventDefault();
-    setTemperature(e.target)
+    setTemperature(e)
   }
   return (
     <section>
       <h2>Thermometer</h2>
-      <div className="actual-temp">Actual Temperature: {"x"}°F</div>
+      <div className="actual-temp">Actual Temperature: {temperature}°F</div>
       <ReactSlider
         value={temperature}
         onAfterChange={slideHandler}
